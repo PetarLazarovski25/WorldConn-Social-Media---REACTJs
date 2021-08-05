@@ -1,11 +1,21 @@
 import React from 'react'
 import Topbar from '../../Components/Topbar/Topbar'
+import LeftSidebar from '../../Components/LeftSidebar/LeftSidebar'
+import RightSidebar from '../../Components/RightSidebar/RightSidebar'
+import Feed from '../../Components/Feed/Feed'
+import './Home.css'
 
 function Home() {
     return (
-        <div>
+        <>
             <Topbar />
-        </div>
+            <div className="HomeContainer">
+                <LeftSidebar />
+                <Feed />
+                <RightSidebar />
+            </div>
+
+        </>
     )
 }
 

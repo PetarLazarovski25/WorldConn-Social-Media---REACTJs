@@ -1,0 +1,107 @@
+.Post {
+  width: 100%;
+  border-radius: 10px;
+  margin: 30px 0;
+  box-shadow: 3px 4px 13px -3px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 3px 4px 13px -3px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 3px 4px 13px -3px rgba(0, 0, 0, 1);
+  background-color: rgba(243, 239, 243, 0.925);
+}
+
+.PostWrapper {
+  padding: 10px;
+}
+
+.PostTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.PostTopLeft {
+  display: flex;
+  align-items: center;
+}
+
+.PostProfileName {
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.PostDate {
+  margin-left: 15px;
+  font-size: 13px;
+  margin-top: 2px;
+  font-weight: 300;
+}
+
+.PostTopRIcon {
+  cursor: pointer;
+}
+
+.ProfileImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.PostData {
+  padding: 5px;
+}
+
+.PostText {
+  margin: 12px 0;
+}
+
+.PostImageWrapper {
+  padding: 5px;
+}
+
+.PostImage {
+  width: 100%;
+  margin-bottom: 10px;
+  max-height: 650px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.PostBottom {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.LikeIcon {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.HeartIcon {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.PostBottomLeft {
+  display: flex;
+  align-items: center;
+}
+
+.PostLikes {
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.PostComments {
+  cursor: pointer;
+}
