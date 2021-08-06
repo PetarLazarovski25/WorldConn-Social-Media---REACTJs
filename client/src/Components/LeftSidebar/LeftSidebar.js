@@ -1,6 +1,8 @@
 import React from 'react'
 import './LeftSidebar.css'
 import { RssFeed, PlayCircleFilledOutlined, Bookmark, Group, HelpOutline, WorkOutline, Event } from '@material-ui/icons'
+import { Users } from '../../dummyData'
+import Friends from '../Friends/Friends'
 
 function LeftSidebar() {
     return (
@@ -53,46 +55,9 @@ function LeftSidebar() {
                 <button className="LSidebarButton">Show More</button>
                 <hr className="LSidebarLine" />
                 <ul className="LSidebarFriendList">
-                    <li className="LSidebarFriend">
-                        <img className="LSidebarFriendImg" src="/assets/person/5.jpeg" />
-                        <span className="LSidebarFriendName">Petar Lazarovski</span>
-                    </li>
-                    <li className="LSidebarFriend">
-                        <img className="LSidebarFriendImg" src="/assets/person/2.jpeg" />
-                        <span className="LSidebarFriendName">Jana Ristovska</span>
-                    </li>
-                    <li className="LSidebarFriend">
-                        <img className="LSidebarFriendImg" src="/assets/person/3.jpeg" />
-                        <span className="LSidebarFriendName">Aleksandar Lazarovski</span>
-                    </li>
-                    <li className="LSidebarFriend">
-                        <img className="LSidebarFriendImg" src="/assets/person/7.jpeg" />
-                        <span className="LSidebarFriendName">Talija Todorovska</span>
-                    </li>
-                    <li className="LSidebarFriend">
-                        <img className="LSidebarFriendImg" src="/assets/person/6.jpeg" />
-                        <span className="LSidebarFriendName">Andrej Ristovski</span>
-                    </li>
-                    <li className="LSidebarFriend">
-                        <img className="LSidebarFriendImg" src="/assets/person/6.jpeg" />
-                        <span className="LSidebarFriendName">Andrej Ristovski</span>
-                    </li>
-                    <li className="LSidebarFriend">
-                        <img className="LSidebarFriendImg" src="/assets/person/6.jpeg" />
-                        <span className="LSidebarFriendName">Andrej Ristovski</span>
-                    </li>
-                    <li className="LSidebarFriend">
-                        <img className="LSidebarFriendImg" src="/assets/person/6.jpeg" />
-                        <span className="LSidebarFriendName">Andrej Ristovski</span>
-                    </li>
-                    <li className="LSidebarFriend">
-                        <img className="LSidebarFriendImg" src="/assets/person/6.jpeg" />
-                        <span className="LSidebarFriendName">Andrej Ristovski</span>
-                    </li>
-                    <li className="LSidebarFriend">
-                        <img className="LSidebarFriendImg" src="/assets/person/6.jpeg" />
-                        <span className="LSidebarFriendName">Andrej Ristovski</span>
-                    </li>
+                    {Users.map(user => (
+                        <Friends key={user.id} user={user} />
+                    ))}
                 </ul>
             </div>
         </div>

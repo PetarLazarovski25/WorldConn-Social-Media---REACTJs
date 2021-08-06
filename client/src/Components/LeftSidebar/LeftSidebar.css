@@ -3,6 +3,8 @@
   height: calc(100vh - 50px);
   overflow-y: scroll;
   background-color: rgba(243, 239, 243, 0.925);
+  position: sticky;
+  top: 50px;
 }
 
 ::-webkit-scrollbar {
@@ -40,13 +42,14 @@
 }
 
 .LSidebarButton {
-  width: 150px;
+  width: 100px;
   border: none;
   padding: 10px;
   border-radius: 5px;
   font-weight: bold;
   margin-top: 20px;
   margin-left: 10px;
+  background-color: lightskyblue;
 }
 
 .LSidebarLine {
