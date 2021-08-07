@@ -4,6 +4,7 @@
   -webkit-box-shadow: 3px 4px 13px -3px rgba(0, 0, 0, 1);
   -moz-box-shadow: 3px 4px 13px -3px rgba(0, 0, 0, 1);
   background-color: rgba(243, 239, 243, 0.925);
+  margin-top: 14px;
 }
 
 .RightSidebarWrapper {
@@ -70,4 +71,54 @@
 
 .RightbarUsername {
   font-weight: 500;
+}
+
+.UserInformation {
+  padding: 10px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.HeaderText {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.UserInformationText {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 4px 0;
+}
+
+.UserFriendsList {
+  padding: 10px;
+}
+
+.UserFriendsHeaderText {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.UserFriends {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.UserFriend {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  flex-basis: 33.33333%;
+  cursor: pointer;
+}
+
+.UserFriendImg {
+  margin: 10px 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 9%;
+  object-fit: cover;
 }
